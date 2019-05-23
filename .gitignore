@@ -67,3 +67,4 @@ test/*
 dist/*
 .idea/*
 conf/*
+src/test.ts
