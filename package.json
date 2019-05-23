@@ -1,0 +1,21 @@
+{
+  "name": "OhysChecker",
+  "version": "1.0.0",
+  "description": "Ohys Checker by RSS",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon --exec sucrase-node src/index.ts",
+    "build": "rm -rf ./dist && sucrase src -d dist --transforms typescript,imports ",
+    "start": "node ./dist/index.js",
+    "pm2": "pm2 start ./dist/index.js --name sds_menu_api"
+  },
+  "repository": "https://github.com/Cellularhacker/OhysChecker.git",
+  "author": "Cellularhacker <wva3cdae@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^1.19.0",
+    "prettier": "^1.17.1",
+    "sucrase": "^3.10.1"
+  }
+}
